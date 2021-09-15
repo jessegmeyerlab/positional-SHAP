@@ -35,7 +35,7 @@ statsmodels
 
 PoSHAP consists of the following
 
-### Data
+## Data
 Data used for training the models. There are three datasets corresponding to the Mamu MHC Intensity, A11:01 MHC IC50, and the CCS data.
 Each dataset has been split into three sets, train, val, and test
 
@@ -46,13 +46,13 @@ A11:01: 20210524_A1101
 CCS: 20210429_CRT_CCS
 
 
-### Models
+## Models
 Pre-trained models using the above datasets. Includes the Adam optimized, hyperparameter optimized, LSTM models and the RMSprop, hyperparameter unoptimized, LSTM models.
 MAMU: 20201230_MHC_all5.model, 20210830_mamu_rmsprop.model
 A*11:01: 20210608_A1101_final.model, 20210830_A1101_rmsprop.model
 CCS: 20210603_CCS_200epoch.model, 20210830_CCS_rmsprop.model
 
-### Pickles
+## Pickles
 Contains pickle files holding the values for each SHAP calculation. Contains SHAP pickles for both LSTM models, the Mamu and CCS extra trees model, and the Mamu and CCS Xgb
 model.
 
@@ -81,7 +81,7 @@ Extra Trees: shapvalues_CCS_etr.pkl
 eXtreme Gradient Boosting: shapvalues_CCS_xgb.pkl
 
 
-### Python
+## Python
 Contains jupyter notebooks for model training and for PoSHAP analysis specific to each dataset
 
 20201230_train_new_model_MHC_all5.ipynb : Split data, Train Mamu Models
@@ -103,5 +103,5 @@ PoSHAP-Top SHAP.ipynb : Copy of /Tutorial/PoSHAP.ipynb. Contains extra cell to d
 regression.ipynb : Creates ExtraTrees and XGB models and calculates SHAP values for created model.
 
 
-### Tutorial
+## Tutorial
 Contains a jupyter notebook to perform PoSHAP. It is set up to run with the model and data also present in the folder.
